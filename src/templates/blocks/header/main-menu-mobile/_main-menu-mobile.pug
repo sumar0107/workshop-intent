@@ -1,0 +1,15 @@
+mixin main-menu-mobile-li(link,text)
+  li.main-menu-mobile__list-item
+    a(href=link class='main-menu-mobile__list-link')&attributes(attributes)
+      span=text
+      +icon('caret-left','')
+
+mixin main-menu-mobile(title,type)
+  nav.main-menu-mobile&attributes(attributes)
+    ul.main-menu-mobile__list
+      block
+
+
+
+
+

@@ -1,0 +1,223 @@
+.swiper-container {
+  overflow: inherit;
+
+  &.swiper-container-initialized {
+    overflow: hidden;
+  }
+
+  .swiper-wrapper {
+    //align-items: center;
+    //align-content: center;
+  }
+
+}
+
+.swiper {
+  padding-left: rem-calc(40);
+  padding-right: rem-calc(40);
+  @include media-breakpoint-up(sm) {
+    padding-left: rem-calc(0);
+    padding-right: rem-calc(0);
+  }
+
+  &_border {
+    &-round {
+      border: solid $mine-shaft;
+      border-width: 1px;
+      @include media-breakpoint-down(xssm) {
+        border-left-width: 0;
+        border-right-width: 0;
+      }
+      @include media-breakpoint-up(md) {
+        border-width: 1.5px;
+      }
+    }
+  }
+
+
+  &__wrapper {
+    position: relative;
+    margin-bottom: rem-calc(40);
+    margin-left: rem-calc(-20);
+    margin-right: rem-calc(-20);
+
+    @include media-breakpoint-up(sm) {
+      margin-left: rem-calc(-60);
+      margin-right: rem-calc(-60);
+      padding-left: rem-calc(60);
+      padding-right: rem-calc(60);
+    }
+    @include media-breakpoint-up(md) {
+      margin-bottom: rem-calc(48);
+      margin-left: rem-calc(-70);
+      margin-right: rem-calc(-70);
+      padding-left: rem-calc(70);
+      padding-right: rem-calc(70);
+    }
+    @include media-breakpoint-up(lg) {
+      margin-left: rem-calc(-108);
+      margin-right: rem-calc(-108);
+      padding-left: rem-calc(108);
+      padding-right: rem-calc(108);
+    }
+  }
+
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    padding: rem-calc(0);
+    height: rem-calc(0);
+    transform: translateY(-50%);
+    //margin-top: rem-calc(-20);
+    display: none;
+    justify-content: space-between;
+    @include media-breakpoint-up(sm) {
+      display: flex;
+    }
+    @include media-breakpoint-up(md) {
+      //margin-top: rem-calc(-46);
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      outline: none !important;
+      cursor: pointer;
+      background: none;
+      width: rem-calc(30);
+      height: rem-calc(20);
+      @include media-breakpoint-up(md) {
+        width: rem-calc(60);
+        height: rem-calc(40);
+      }
+
+      svg {
+        width: rem-calc(30);
+        height: rem-calc(20);
+        fill: $limeade;
+        @include transition(fill .15s);
+
+        @include media-breakpoint-up(md) {
+          width: rem-calc(60);
+          height: rem-calc(40);
+        }
+      }
+
+
+      &[aria-disabled='true'] {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      @include media-breakpoint-up(lg) {
+        position: absolute;
+        &[aria-disabled='true'] {
+          display: none;
+        }
+      }
+
+      &_next {
+        right: rem-calc(0);
+        //transform: translateX(100%);
+      }
+
+      &_prev {
+        left: rem-calc(0);
+        //transform: translateX(-100%);
+      }
+
+      &:hover {
+        color: $link-hover-color;
+
+        .icon {
+          fill: $link-hover-color;
+        }
+      }
+
+      &:active {
+        color: $purple-pizzazz;
+
+        .icon {
+          fill: $purple-pizzazz;
+        }
+      }
+    }
+
+
+    &-icon {
+      width: rem-calc(15);
+      height: rem-calc(37);
+      fill: $limeade;
+    }
+  }
+
+  &__pagination {
+    display: block;
+
+    .swiper__wrapper_mobile & {
+      display: block;
+      @include media-breakpoint-up(sm) {
+        display: none;
+      }
+    }
+
+    &.swiper-pagination {
+      position: relative;
+      bottom: auto;
+      @include border-top($mine-shaft);
+
+      .swiper_border-none + & {
+        border-top: none;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      width: auto;
+      height: auto;
+      color: $limeade;
+      font-size: rem-calc(18);
+      line-height: rem-calc(24);
+      font-style: italic;
+      opacity: 1;
+      outline: none !important;
+      @include transition(color .15s);
+
+      @include media-breakpoint-up(md) {
+        font-size: rem-calc(24);
+        line-height: rem-calc(28);
+      }
+
+      &:hover {
+        color: $link-hover-color;
+      }
+
+      &:active {
+        color: $purple-pizzazz;
+      }
+
+      &-active {
+        color: $mine-shaft;
+        font-style: normal;
+
+        &:hover {
+          color: $mine-shaft;
+        }
+
+        &:active {
+          color: $mine-shaft;
+        }
+      }
+    }
+  }
+}
+
+.swiper-container-horizontal + .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: rem-calc(0 10);
+}

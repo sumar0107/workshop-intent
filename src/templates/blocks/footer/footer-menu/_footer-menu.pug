@@ -1,0 +1,12 @@
+mixin footer-menu-list-item(text,src)
+  li.footer-menu__list-item
+    a(href=src).footer-menu__list-link&attributes(attributes)
+      span=text
+      block
+include ../../../mixins/icon-svg/_icon-svg
+.footer-menu
+  ul.footer-menu__list
+    +footer-menu-list-item('Сведения об СПбГУ','#')(class='external-link')
+      +icon('external-link','')
+    +footer-menu-list-item('Документация программ','#')(class='external-link')
+      +icon('external-link','')

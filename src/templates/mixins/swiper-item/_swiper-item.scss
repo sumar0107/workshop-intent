@@ -1,0 +1,116 @@
+.swiper-item {
+
+
+  &__video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    background-color: $mine-shaft;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+
+  &__img {
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .swiper-item_front & {
+      box-shadow: 0 24px 48px rgba(32, 32, 32, 0.5);
+      background-color: $alto;
+
+      img {
+        opacity: 0.8;
+        @include transition(opacity .15s);
+      }
+
+      .swiper-slide-active & {
+        img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__caption {
+    color: $mine-shaft;
+    font-size: rem-calc(11);
+    line-height: rem-calc(20);
+    padding: rem-calc(10 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    min-height: rem-calc(80);
+    text-align: left;
+    opacity: 0;
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(18);
+      line-height: rem-calc(24);
+      padding: rem-calc(12 0);
+      min-height: rem-calc(96);
+    }
+
+    .swiper-slide-active & {
+      opacity: 1;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: rem-calc(60);
+
+    @include media-breakpoint-up(md) {
+      height: auto;
+      max-height: rem-calc(216);
+      overflow: hidden;
+    }
+
+    .swiper-slide-active & {
+      opacity: 1;
+    }
+
+    .swiper-slide-prev & {
+      opacity: 0;
+    }
+
+
+    .title {
+      max-height: rem-calc(60);
+      overflow: hidden;
+      @include media-breakpoint-up(md) {
+        height: auto;
+        max-height: rem-calc(216);
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  height: auto;
+
+  .swiper-container-initialized & {
+    height: 100%;
+  }
+
+  .swiper-container-autoheight.swiper-container-initialized & {
+    height: auto;
+  }
+}

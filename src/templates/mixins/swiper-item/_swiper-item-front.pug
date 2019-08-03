@@ -1,0 +1,18 @@
+mixin swiper-item-front(title,type,src,caption)
+  .swiper-item.swiper-item_front
+    if type == 'video'
+      if(title !== '')
+        .swiper-item__title
+          h2.title.title_front-slider
+            a(href='#')=title
+      .swiper-item__video
+        iframe(src=src)&attributes(attributes)
+    else if type == 'img'
+      if(title !== '')
+        .swiper-item__title
+          h2.title.title_front-slider
+            a(href='#')=title
+      .swiper-item__img
+        img(src=src)&attributes(attributes)
+    else
+      block

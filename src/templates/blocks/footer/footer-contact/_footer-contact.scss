@@ -1,0 +1,25 @@
+.footer-contact {
+  color: $black;
+  font-size: rem-calc(14);
+  line-height: rem-calc(20);
+  font-weight: normal;
+  text-transform: uppercase;
+
+
+  p {
+    margin-bottom: rem-calc(20);
+
+    a {
+      color: $black;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: rem-calc(24);
+    line-height: rem-calc(24);
+    p {
+      margin-bottom: rem-calc(24);
+    }
+  }
+
+}

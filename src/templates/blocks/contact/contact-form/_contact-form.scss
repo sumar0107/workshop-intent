@@ -1,0 +1,29 @@
+.contact-form {
+
+  &_experiment {
+    .form-control {
+      max-width: rem-calc(440);
+      background-color: transparent;
+    }
+  }
+
+
+  &__row {
+    @include make-row();
+  }
+
+  &__col {
+    @include make-col-ready();
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6, 8);
+      @include make-col-offset(1, 8);
+    }
+  }
+
+  &__btn {
+    max-width: rem-calc(320);
+  }
+}
+

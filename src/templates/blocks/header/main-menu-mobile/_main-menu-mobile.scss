@@ -1,0 +1,23 @@
+.main-menu-mobile {
+  display: block;
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
+
+  &__list {
+
+    &-item {
+
+    }
+
+    &-link {
+
+      @include hover {
+
+      }
+      @include active {
+
+      }
+    }
+  }
+}

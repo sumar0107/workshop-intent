@@ -1,0 +1,27 @@
+//- main layout
+
+block data
+
+doctype html
+html(class="no-js" lang="ru")
+  head
+    include ../../includes/head/_head
+
+  block body
+    -var bodyClasses
+
+  body(class=bodyClasses)
+    .wrapper
+      include ../../includes/header/_header
+      main.wrapper__content
+        block content
+    include ../../includes/footer/_footer
+
+
+    block scripts
+      if locals.production
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=AELb21wBAAAA5nb1QQIA6Y3WV7SOhZaE05i9QcpChh27SesAAAAAAAAAAAB0Uoh9Y3gh4Roi1mOZcNa8uLvOcQ" type="text/javascript")
+        script(src="assets/js/app.min.js")
+      else
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=AELb21wBAAAA5nb1QQIA6Y3WV7SOhZaE05i9QcpChh27SesAAAAAAAAAAAB0Uoh9Y3gh4Roi1mOZcNa8uLvOcQ" type="text/javascript")
+        script(src="./assets/js/app.js")

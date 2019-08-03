@@ -1,0 +1,45 @@
+.collapse {
+
+}
+
+.btn-collapse {
+
+  &-open-dn {
+    display: none;
+
+    &.collapsed {
+      display: block;
+    }
+  }
+}
+
+.btn {
+  .on {
+    display: none;
+  }
+
+  .off {
+    display: block;
+  }
+
+  &.collapsed {
+    .on {
+      display: block;
+    }
+
+    .off {
+      display: none;
+    }
+  }
+}
+
+.js-show {
+  &__item {
+    display: none;
+  }
+
+  &__btn {
+
+  }
+}
+

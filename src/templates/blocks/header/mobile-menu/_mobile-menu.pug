@@ -1,0 +1,12 @@
+mixin mobile-menu-li(link,text,icon)
+  li(class='mobile-menu__list-item')
+    a(href=link class='mobile-menu__list-link')&attributes(attributes)
+      span.mobile-menu__list-icon
+        +icon(icon,'')
+      span.mobile-menu__list-text=text
+nav.mobile-menu
+  ul.mobile-menu__list
+    +mobile-menu-li('./training.html', 'Обучение','training')
+    +mobile-menu-li('./faculty.html', 'Факультет','faculty')
+    +mobile-menu-li('./structure.html', 'Структура','structure')
+    +mobile-menu-li('./calendar.html', 'Календарь','calendar-menu')

@@ -1,0 +1,32 @@
+a {
+  outline: none;
+  @include transition(color .15s);
+
+  &:hover, &:focus, &.active, &:active {
+    outline: none;
+  }
+
+  &:active {
+    color: $purple-pizzazz;
+  }
+
+  &:disabled, &.disabled {
+    color: rgba($mine-shaft, .5);
+    pointer-events: none;
+  }
+}
+
+.icon {
+  a > & {
+    fill: $link-color;
+    transition: (fill .15s);
+  }
+
+  a:hover > & {
+    fill: $link-hover-color;
+  }
+
+  a:active > & {
+    fill: $purple-pizzazz;
+  }
+}

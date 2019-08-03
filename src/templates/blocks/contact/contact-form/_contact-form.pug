@@ -1,0 +1,37 @@
+include ../../../mixins/radio-btn/_radio-btn
+include ../../../mixins/btn/_btn
+.contact-form
+
+  form.contact-form__form
+    .form-group
+      label(for='') Выберите тему
+      .btn-group-vertical.btn-group-toggle(data-toggle="buttons" style='width: 100%')
+        +radio-btn('contact-form-theme-1','contact-form-theme','','Поступление')(class='btn-radio btn-sm btn-width-full')
+        +radio-btn('contact-form-theme-2','contact-form-theme','','Обучение / перевод из другого вуза')(class='btn-radio btn-sm btn-width-full')
+        +radio-btn('contact-form-theme-3','contact-form-theme','','Программы обмена')(class='btn-radio btn-sm btn-width-full')
+        +radio-btn('contact-form-theme-4','contact-form-theme','','Пресс-центр')(class='btn-radio btn-sm btn-width-full')
+    .form-group
+      label(for='contact-form-name') Имя Фамилия
+      input(class='form-control' type='text' id='contact-form-name')
+    .form-group
+      label(for='contact-form-email') Электронная почта
+      input(class='form-control' type='email' id='contact-form-email')
+    .form-group
+      label(for='contact-form-message') Сообщение
+      textarea(class='form-control' id='contact-form-message' rows='5')
+    .form-group
+      .form-file
+        input(type="file" class="custom-file-input" id="customFile" style='display: none;')
+        label(class="btn btn-link btn-icon btn-icon_i-first" for="customFile")
+          +icon('attach','')
+          span Загрузить документ
+
+    .form-group
+      .checkbox
+        input(type="checkbox" class="" id="contact-form-checkbox")
+        label( for="contact-form-checkbox") Я согласен(а) на обработку приведенных в форме моих персональных данных (Ф.И.О., контактная информация) СПбГУ.
+    .form-group
+      img(src='./assets/img/captcha.png')
+    .form-group
+      .contact-form__btn
+        +btn('submit','Отправить')(class='btn-green btn-width-full')
