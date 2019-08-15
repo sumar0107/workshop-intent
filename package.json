@@ -94,6 +94,7 @@
     "popper.js": "^1.15.0",
     "requirejs": "^2.3.6",
     "scrollreveal": "^4.0.5",
+    "superslide.js": "^1.0.0",
     "svgxuse": "^1.2.6",
     "swiper": "^4.5.0"
   }

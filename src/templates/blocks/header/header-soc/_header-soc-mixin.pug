@@ -1,0 +1,6 @@
+include ../../../mixins/icon-svg/_icon-svg
+mixin header-soc-item(href,icon,title)
+  li.header-soc__list-item
+    a.header-soc__list-link(href=href)
+      +icon(icon,'')
+      span=title

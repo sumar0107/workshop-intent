@@ -1,14 +1,25 @@
 .mobile-menu {
-
+  background-color: #4e136a;
 
   &__list {
+    padding: 0;
+    list-style: none;
+    margin: 0;
 
     &-item {
 
     }
 
     &-link {
-
+      display: flex;
+      align-content: center;
+      align-items: center;
+      height: rem-calc(60);
+      padding: rem-calc(6 10);
+      color: #ffffff;
+      font-size: rem-calc(18);
+      font-weight: 500;
+      line-height: rem-calc(18);
     }
   }
 }

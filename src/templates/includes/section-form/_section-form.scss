@@ -1,0 +1,60 @@
+.section-form {
+  position: relative;
+  background-image: url('../img/section-form.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: rem-calc(50);
+  padding-bottom: rem-calc(120);
+  @include media-breakpoint-up(md) {
+    padding-top: rem-calc(100);
+    padding-bottom: rem-calc(260);
+  }
+
+  &__lid {
+    color: #ffffff;
+    font-size: rem-calc(20);
+    font-weight: 400;
+    line-height: rem-calc(24);
+    text-align: center;
+    margin-bottom: rem-calc(60);
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(28);
+      line-height: rem-calc(42);
+      margin-bottom: rem-calc(120);
+    }
+  }
+
+}
+
+.form {
+  display: block;
+  @include media-breakpoint-up(sm) {
+    padding: rem-calc(20 20 0 20);
+  }
+
+  &__wrapper {
+    display: block;
+    padding: rem-calc(20);
+    border-radius: 15px;
+    border: 1px solid #666;
+    background: rgba(255, 255, 255, 0.7);
+    max-width: rem-calc(470);
+    margin: 0 auto;
+  }
+
+  &__text {
+    color: #555555;
+    font-size: rem-calc(16);
+    line-height: rem-calc(20);
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: rem-calc(20);
+
+    &_bottom {
+      color: #858585;
+    }
+  }
+}

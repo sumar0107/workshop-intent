@@ -1,4 +1,5 @@
 .footer-menu {
+  margin-bottom: rem-calc(30);
   &__list {
     padding: 0;
     margin: 0;
@@ -9,15 +10,30 @@
     }
 
     &-link {
-      color: $mine-shaft;
+      color: #080609;
       font-size: rem-calc(14);
-      line-height: rem-calc(20);
-      font-weight: normal;
+      line-height: rem-calc(24);
+      font-weight: 400;
+      text-transform: uppercase;
 
-      @include media-breakpoint-up(md){
-        font-size: rem-calc(24);
+      @include media-breakpoint-up(md) {
+        font-size: rem-calc(14);
         line-height: rem-calc(24);
       }
+    }
+  }
+}
+
+.footer-menu-inner {
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &-link {
+      color: #ffffff;
+      font-size: rem-calc(14);
+      line-height: rem-calc(24);
     }
   }
 }

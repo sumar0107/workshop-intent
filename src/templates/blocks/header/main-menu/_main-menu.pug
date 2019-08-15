@@ -1,73 +1,14 @@
 mixin main-menu-li(link,text,classs)
   li(class='main-menu__list-item '+classs)
-    a(href=link class='main-menu__list-link')&attributes(attributes)=text
+    a(href=link class='main-menu__list-link')&attributes(attributes)
+      span=text
     block
-include ../main-menu-inner/_main-menu-inner
-include ../../hashtags/_hashtags-mixin
+
 nav.main-menu
   ul.main-menu__list
-    +main-menu-li('./training.html', 'обучение','active')(class='js-main-menu-list-link')
-      .main-menu__inner
-        +main-menu-inner('Обучение','menu')(class='' style='background-image: url("./assets/img/main-menu/training.png")')
-          +main-menu-inner-li('#','Бакалавриат')
-          +main-menu-inner-li('#','Магистратура')
-          +main-menu-inner-li('#','Условия приема')
-          +main-menu-inner-li('#','Каталог курсов')
-          +main-menu-inner-li('#','Подход к обучению')
-          +main-menu-inner-li('#','Частые вопросы')
-          +main-menu-inner-li('#','Подготовительные курсы')
-          +main-menu-inner-li('#','Результат обучения')
-          +main-menu-inner-li('#','Повышение квалификации')
-    +main-menu-li('./faculty.html', 'факультет','')(class='js-main-menu-list-link')
-      .main-menu__inner
-        +main-menu-inner('Факультет','menu')(class='' style='background-image: url("./assets/img/main-menu/faculty.png")')
-          +main-menu-inner-li('#','Направления научной деятельности')
-          +main-menu-inner-li('#','Кафедры')
-          +main-menu-inner-li('#','Лаборатория когнитивных исследований')
-          +main-menu-inner-li('#','Библиотека')
-          +main-menu-inner-li('#','Органы самоуправления')
-    +main-menu-li('./structure.html', 'структура','')(class='js-main-menu-list-link')
-      .main-menu__inner
-        +main-menu-inner('Структура','menu')(class='' style='background-image: url("./assets/img/main-menu/structure.png")')
-          +main-menu-inner-li('#','Адрес и телефоны')
-          +main-menu-inner-li('#','История и традиции')
-          +main-menu-inner-li('#','Персоналии')
-          +main-menu-inner-li('#','Дворец Бобринских')
-          +main-menu-inner-li('#','Наши партнеры')
-          +main-menu-inner-li('#','О Санкт-Петербурге')
-    +main-menu-li('./calendar.html', 'календарь','')(class='js-main-menu-list-link')
-      .main-menu__inner
-        +main-menu-inner('Календарь','menu')(class='' style='background-image: url("./assets/img/main-menu/calendar.png")')
-          .main-menu__row
-            .main-menu__col
-              .hashtags
-                ul.hashtags__list
-                  +hashtags-list-item('# международное сотрудничество')
-                  +hashtags-list-item('# китай')
-                  +hashtags-list-item('# студентам')
-                  +hashtags-list-item('# мкф')
-                  +hashtags-list-item('# корея')
-                  +hashtags-list-item('# онлайн-курсы')
-                  +hashtags-list-item('# поступающим')
-                  +hashtags-list-item('# экология')
-                  +hashtags-list-item('# арктика')
-                  +hashtags-list-item('# стартап')
-                  +hashtags-list-item('# китай')
-                  +hashtags-list-item('# студентам')
-                  +hashtags-list-item('# мкф')
-    //-+main-menu-li('#', 'поиск','')(class='main-menu__list-link_search js-search-link')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    +main-menu-li('#', 'Задачи','')(class='')
+    +main-menu-li('#', 'С чего начинаем','')(class='')
+    +main-menu-li('#', 'Типы программ','')(class='')
+    +main-menu-li('#', 'Результат','')(class='')
+    +main-menu-li('#', 'Уникальность','')(class='')
+    +main-menu-li('#', 'О нас','')(class='')

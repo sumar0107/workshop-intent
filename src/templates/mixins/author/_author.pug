@@ -1,0 +1,15 @@
+mixin author(img,title)
+  .author
+    .author__img
+      img(src=img)
+    .author__body.js-show-more-wrapper
+      .author__title=title
+      .author__text
+        block
+      a(href='#').btn.btn-green ЗАПИСАТЬСЯ
+      br
+      br
+
+      button(class='show-more-link show-more-link_purple js-show-more')
+        span Подробнее:
+        +icon('arrow-down','')

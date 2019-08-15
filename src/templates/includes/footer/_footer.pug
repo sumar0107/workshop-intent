@@ -1,12 +1,43 @@
 include ../../mixins/space/_space
+include ../../blocks/header/header-soc/_header-soc-mixin
 // START: footer
 
 footer.footer
-  .footer__top
-    .container-full
+  .container-full
+    .footer__row
+      .footer__col
+        include ../../blocks/footer/footer-menu/_footer-menu
+      .footer__col
+        .footer__phone
+          a(href='tel:+78125754596') +7 (812) 575 45 96
+          br
+          a(href='tel:+79217774362') +7 (921) 777 43 62
+        .footer-menu
+          ul.footer-menu__list
+            li.footer-menu__list-item
+              span.footer-menu__list-link СКАЧАТЬ ДОКУМЕНТЫ
+              .footer-menu-inner
+                ul.footer-menu-inner__list
+                  li.footer-menu-inner__list-item
+                    a(href='#').footer-menu-inner__list-link Презентации
+
+      .footer__col
+        .footer-menu
+          ul.footer-menu__list
+            +footer-menu-list-item('ПУБЛИЧНАЯ ОФЕРТА','#')
+            +footer-menu-list-item('ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ','#')
+            +footer-menu-list-item('ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ','#')
+
+        .header-soc
+          ul.header-soc__list
+            +header-soc-item('#','vk','Вконтакте')
+            +header-soc-item('#','facebook','Facebook')
+            +header-soc-item('#','instagram','Instagram')
+      .footer__col
+        .footer__text
+          p ООО «Мастерская Намерения» #[br] ИНН 000000000, КПП 0000000 #[br] ОГРН 000000000000 #[br] Адрес: Россия, Санкт-Петербург, наб. реки Фонтанки, д. 130 #[br] info@intentionwork.ru
+          p © ® ООО «Мастерская Намерения» 2019 г
 
 
-  .footer__bottom
-    .container-full
 
 // END: footer

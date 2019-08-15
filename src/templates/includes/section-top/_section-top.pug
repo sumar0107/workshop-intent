@@ -1,0 +1,28 @@
+include ../../mixins/swiper/_swiper
+// START: section-top
+
+.section-top
+  .section-top__slider
+    +swiper-slider(class='js-swiper')
+      .swiper-slide
+        img.section-top__slider-img(src='./img/slide/slide-1.png')
+      .swiper-slide
+        img.section-top__slider-img(src='./img/slide/slide-2.png')
+      .swiper-slide
+        img.section-top__slider-img(src='./img/slide/slide-3.png')
+
+  .section-top__inner
+    .container-full
+      .wrapper__row
+        .wrapper__col-center-10
+          .section-top__inner-inner
+            .section-top__logo
+              img(src='./img/logo.png')
+            .section-top__text Индивидуальная психотренинговая программа для достижения любых Ваших целей
+            a.section-top__link(href='#') ПУТЬ К ЦЕЛИ. УВЕРЕННОСТЬ В БУДУЩЕМ
+
+
+
+
+
+// END: section-top

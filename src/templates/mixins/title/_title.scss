@@ -9,24 +9,6 @@
     line-height: rem-calc(72);
   }
 
-  &__vertical-wrapper {
-    @include media-breakpoint-up(md) {
-      display: flex;
-      align-items: flex-start;
-      align-content: flex-start;
-      justify-content: flex-end;
-    }
-  }
-
-  &_vertical {
-    @include media-breakpoint-up(md) {
-      transform: rotate(-90deg) translateY(-100%);
-      transform-origin: top right;
-      margin-bottom: 0;
-      white-space: nowrap;
-    }
-  }
-
   &_white {
     color: $white;
   }
@@ -101,33 +83,17 @@
   }
 
   &__lid {
-    color: $mine-shaft;
+    color: #000000;
     font-size: rem-calc(16);
-    line-height: rem-calc(20);
-    margin-bottom: rem-calc(20);
+    line-height: rem-calc(24);
+    font-weight: 400;
+    margin-bottom: rem-calc(40);
+    text-align: center;
 
     @include media-breakpoint-up(md) {
-      font-size: rem-calc(24);
-      line-height: rem-calc(24);
-      margin-bottom: rem-calc(48);
-    }
-
-    &_big {
-      font-size: rem-calc(16);
-      line-height: rem-calc(20);
-      @include media-breakpoint-up(md) {
-        font-size: rem-calc(36);
-        line-height: rem-calc(48);
-      }
-    }
-
-    &_small {
-      font-size: rem-calc(16);
-      line-height: rem-calc(20);
-      @include media-breakpoint-up(md) {
-        font-size: rem-calc(24);
-        line-height: rem-calc(24);
-      }
+      font-size: rem-calc(20);
+      line-height: rem-calc(30);
+      margin-bottom: rem-calc(80);
     }
   }
 

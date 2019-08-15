@@ -1,0 +1,25 @@
+.show-more-link {
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: #59a159;
+  fill: #59a159;
+  outline: none !important;
+
+  span {
+    order: 1;
+    margin-right: rem-calc(10);
+  }
+
+  .icon {
+    order: 2;
+    display: block;
+    width: rem-calc(22);
+    height: rem-calc(22);
+  }
+}
+

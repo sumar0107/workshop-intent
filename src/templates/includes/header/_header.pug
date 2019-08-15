@@ -1,6 +1,21 @@
+include ../../mixins/icon-svg/_icon-svg
+include ../../blocks/header/hamburger/_hamburger
 // START: header
 header(class="header")
-  .header__inner
+  .header__top
     .container-full
+      .header__row
+        .header__soc
+          include ../../blocks/header/header-soc/_header-soc
+        .header__lid Индивидуальная психотренинговая программа для достижения целей
+        .header__phone
+          a(href='tel:88125754596')
+            +icon('phone','')
+            span 8 (812) 575 45 96
+  .header__menu
+    .container-full
+      include ../../blocks/header/main-menu/_main-menu
+      .header__hamburger
+        +hamburger
 
 // END: header

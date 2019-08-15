@@ -1,0 +1,33 @@
+.section-why-us {
+  background-color: #69bb84;
+  padding: rem-calc(50 0);
+  @include media-breakpoint-up(md) {
+    padding: rem-calc(100 0);
+  }
+
+  &__item {
+    background-color: #d3d1da;
+    color: #1e1e20;
+    font-size: rem-calc(14);
+    line-height: rem-calc(24);
+    font-weight: 400;
+    padding: rem-calc(20);
+
+    &:not(:last-child) {
+      margin-bottom: rem-calc(20);
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(24);
+      line-height: rem-calc(36);
+      &:not(:last-child) {
+        margin-bottom: rem-calc(40);
+      }
+    }
+
+    &_noteven {
+      background-color: #ffffff;
+      color: #451a68;
+    }
+  }
+}

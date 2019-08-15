@@ -16,8 +16,8 @@ $red:                 #ff0000;
 $fuchsia:             #ff00ff;
 $purple-pizzazz:      #d000d0;
 
-$footer-height: 642;
-$footer-height-sm: 474;
+$footer-height: 304;
+$footer-height-sm: 414;
 
 $gray-600: #333333;
 $gray-900: #19324d;
@@ -27,7 +27,7 @@ $font-size-base:              1rem;
 $body-bg:             $white;
 $body-color:          $mine-shaft;
 
-$vremena-grotesk: 'Vremena Grotesk', serif;
+$ubuntu: 'Ubuntu', sans-serif;
 
 
 // Links
@@ -79,8 +79,8 @@ $container-max-widths: (
 $grid-columns:      12;
 $grid-gutter-width: 40px;
 
-$font-family-base:      $vremena-grotesk;
-$headings-font-family:  $vremena-grotesk;
+$font-family-base:      $ubuntu;
+$headings-font-family:  $ubuntu;
 
 $border-radius:               0;
 $border-radius-lg:            0;
@@ -89,7 +89,7 @@ $border-radius-sm:            0;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 $input-btn-font-size:     1rem;
-$input-btn-font-family:   $vremena-grotesk;
+$input-btn-font-family:   $ubuntu;
 $input-btn-padding-x:     1.75rem;
 $input-btn-padding-y:     0.4375rem;
 $input-btn-focus-width:       .0rem ;
@@ -124,7 +124,7 @@ $label-margin-bottom:                   .5rem !default;
 
 $input-padding-x:                       0.625rem;
 $input-padding-y:                       0.5625rem;
-$input-font-family:                     $vremena-grotesk;
+$input-font-family:                     $ubuntu;
 $input-font-size:                       1.125rem;
 $input-font-weight:                     400;
 $input-line-height:                     1.5rem;

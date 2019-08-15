@@ -1,3 +1,85 @@
 .header {
+  background-color: #e1e3e3;
 
+  &__top {
+    padding: rem-calc(10 0);
+  }
+
+  &__row {
+    @include make-row();
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__soc {
+    padding: rem-calc(0 20);
+  }
+
+  &__lid {
+    display: none;
+    color: #666666;
+    font-weight: 300;
+    line-height: rem-calc(24);
+    text-transform: uppercase;
+    @include media-breakpoint-up(sm) {
+      display: block;
+      font-size: rem-calc(10);
+    }
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(16);
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: rem-calc(20);
+    }
+  }
+
+  &__phone {
+    color: #000000;
+    font-size: rem-calc(16);
+    font-weight: 300;
+    line-height: rem-calc(24);
+    padding: rem-calc(0 20);
+    @include media-breakpoint-up(sm){
+      font-size: rem-calc(20);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      color: #000000;
+
+      .icon {
+        order: 1;
+        width: rem-calc(24);
+        height: rem-calc(24);
+        margin-right: rem-calc(6);
+        fill: #000000;
+        @include media-breakpoint-up(sm){
+          margin-right: rem-calc(10);
+        }
+      }
+
+      span {
+        order: 2;
+      }
+    }
+  }
+
+  &__menu {
+    background-color: #4e136a;
+    .main-menu{
+      display: none;
+      @include media-breakpoint-up(sm){
+        display: block;
+      }
+    }
+  }
+
+  &__hamburger{
+    display: flex;
+    @include media-breakpoint-up(sm){
+      display: none;
+    }
+  }
 }

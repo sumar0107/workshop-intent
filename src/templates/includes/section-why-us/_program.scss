@@ -1,0 +1,230 @@
+.program {
+  margin-bottom: rem-calc(8);
+
+  &_header {
+    text-align: center;
+  }
+
+  &__row {
+    @include make-row(4px);
+    @include media-breakpoint-up(sm) {
+      flex-wrap: nowrap;
+      align-content: center;
+      align-items: stretch;
+    }
+  }
+
+  &__col {
+
+    &-1 {
+      @include make-col-ready(4px);
+      @include media-breakpoint-down(xssm) {
+        @include make-col(6)
+      }
+      @include media-breakpoint-up(sm) {
+        order: 1;
+        width: rem-calc(140);
+        max-width: rem-calc(140);
+        min-width: rem-calc(140);
+      }
+      @include media-breakpoint-up(md) {
+        width: rem-calc(200);
+        max-width: rem-calc(200);
+        min-width: rem-calc(200);
+      }
+
+    }
+
+    &-2 {
+      @include make-col-ready(4px);
+      @include media-breakpoint-down(xssm) {
+        margin-top: 4px;
+      }
+      @include media-breakpoint-up(sm) {
+        order: 2;
+      }
+      @include media-breakpoint-up(md) {
+
+      }
+    }
+
+    &-3 {
+      @include make-col-ready(4px);
+      @include media-breakpoint-down(xssm) {
+        @include make-col(6)
+      }
+      @include media-breakpoint-up(sm) {
+        order: 3;
+        width: rem-calc(140);
+        max-width: rem-calc(140);
+        min-width: rem-calc(140);
+      }
+      @include media-breakpoint-up(md) {
+        width: rem-calc(200);
+        max-width: rem-calc(200);
+        min-width: rem-calc(200);
+      }
+
+    }
+  }
+
+  &__title {
+    color: #59a159;
+    font-size: rem-calc(24);
+    line-height: rem-calc(36);
+    font-weight: 500;
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(30);
+      line-height: rem-calc(42);
+    }
+
+    &-text {
+      color: #474749;
+      font-size: rem-calc(20);
+      font-weight: 500;
+      line-height: rem-calc(28);
+      @include media-breakpoint-up(md) {
+        font-size: rem-calc(26);
+        line-height: rem-calc(42);
+      }
+    }
+  }
+
+  &__date {
+    color: #1e1e20;
+    font-size: rem-calc(14);
+    line-height: rem-calc(20);
+    font-weight: 500;
+    text-align: center;
+
+    span {
+      display: inline-block;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(18);
+      line-height: rem-calc(24);
+    }
+  }
+
+  &__price {
+    color: #451a68;
+    font-size: rem-calc(14);
+    line-height: rem-calc(20);
+    font-weight: 500;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(18);
+      line-height: rem-calc(24);
+    }
+  }
+
+  hr {
+    height: rem-calc(1);
+    width: 100%;
+    border: none;
+    margin: rem-calc(5 0);
+    background-color: #666;
+  }
+
+  &__inner{
+    width: 100%;
+    padding: rem-calc(15);
+  }
+}
+
+.program-bg {
+  height: 100%;
+  padding: rem-calc(5);
+  width: 100%;
+
+  &_1 {
+    background-color: #d3d1da;
+  }
+
+  &_2 {
+    background-color: #00a253;
+  }
+
+  &_3 {
+    background-color: #ffffff;
+  }
+
+  &_4 {
+    background-color: #f2f0f8;
+  }
+
+  &_f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.program-header {
+  text-align: center;
+  margin-bottom: rem-calc(8);
+
+  &__title {
+    color: #451a68;
+    font-size: rem-calc(24);
+    line-height: rem-calc(32);
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(32);
+      line-height: rem-calc(36);
+    }
+
+    &-2 {
+      color: #451a68;
+      font-size: rem-calc(12);
+      line-height: rem-calc(16);
+      font-weight: 500;
+      text-transform: uppercase;
+      text-align: center;
+      @include media-breakpoint-up(md) {
+        font-size: rem-calc(18);
+        line-height: rem-calc(20);
+      }
+    }
+  }
+
+  &__text {
+    color: #1e1e20;
+    font-size: rem-calc(12);
+    line-height: rem-calc(18);
+    font-weight: 500;
+    margin-bottom: rem-calc(6);
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(14);
+      line-height: rem-calc(20);
+      margin-bottom: rem-calc(12);
+      text-transform: uppercase;
+    }
+  }
+}
+
+.program-lid {
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  color: #ffffff;
+  font-size: rem-calc(16);
+  line-height: rem-calc(20);
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: rem-calc(8);
+  @include media-breakpoint-up(md) {
+    font-size: rem-calc(24);
+    line-height: rem-calc(30);
+  }
+
+  .program-bg {
+    min-height: rem-calc(74);
+  }
+}

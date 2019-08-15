@@ -1,3 +1,42 @@
 .footer {
+  background-color: #919395;
+  padding: rem-calc(40 0);
 
+  &__row {
+    @include make-row();
+  }
+
+  &__col {
+    @include make-col-ready();
+    @include media-breakpoint-up(xssm) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(md) {
+      @include make-col(3);
+    }
+  }
+
+  &__phone {
+    font-size: rem-calc(14);
+    line-height: rem-calc(24);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: rem-calc(30);
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(14);
+      line-height: rem-calc(24);
+    }
+
+    a {
+      color: #ffffff;
+    }
+  }
+
+  &__text{
+    color: #ffffff;
+    font-size: rem-calc(14);
+    font-weight: 400;
+    line-height: rem-calc(24);
+  }
 }

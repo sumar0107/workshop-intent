@@ -34,5 +34,33 @@ body {
 
   &__col {
 
+
+    &-center-10 {
+      @include make-col-ready();
+
+      @include media-breakpoint-up(md) {
+        @include make-col(10);
+        @include make-col-offset(1);
+      }
+    }
+
+    &-center-8 {
+      @include make-col-ready();
+
+      @include media-breakpoint-up(md) {
+        @include make-col(8);
+        @include make-col-offset(2);
+      }
+    }
+  }
+}
+.footer{
+  @include media-breakpoint-up(sm) {
+    height: rem-calc($footer-height-sm);
+    margin-top: rem-calc(-$footer-height-sm);
+  }
+  @include media-breakpoint-up(md) {
+    height: rem-calc($footer-height);
+    margin-top: rem-calc(-$footer-height);
   }
 }

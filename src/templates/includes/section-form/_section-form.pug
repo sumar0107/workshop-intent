@@ -1,0 +1,24 @@
+include ../../mixins/btn/_btn
+include ../../mixins/space/_space
+.section-form
+  .container-full
+    .wrapper__row
+      .wrapper__col-center-8
+        .section-form__lid Программа поможет вам достичь того состояния души и личностной зрелости, когда ваша жизнь становится подвластна вам и любима!
+        .form__wrapper
+          h2.title.title_small.text-center
+            span(style='color: #59a159;') Записывайтесь на программу,
+            +space
+            span(style='color: #451a68;') и сделайте свой путь к цели счастливым!
+          .form
+            .form__text Заполните форму, тем самым подтвердив свое желание участвовать в программе
+            .form-group
+              input(type='text' class='form-control' placeholder='Ваше имя')
+            .form-group
+              input(type='mail' class='form-control' placeholder='Ваш e-mail')
+            .form-group
+              +btn('submit', 'ЗАПИСАТЬСЯ НА ПРОГРАММУ')(class='btn-green btn-width-full')
+            .form__text.form__text_bottom Ваши личные данные в безопасности.
+
+
+// END: section-full

@@ -3,10 +3,11 @@ mixin footer-menu-list-item(text,src)
     a(href=src).footer-menu__list-link&attributes(attributes)
       span=text
       block
-include ../../../mixins/icon-svg/_icon-svg
 .footer-menu
   ul.footer-menu__list
-    +footer-menu-list-item('Сведения об СПбГУ','#')(class='external-link')
-      +icon('external-link','')
-    +footer-menu-list-item('Документация программ','#')(class='external-link')
-      +icon('external-link','')
+    +footer-menu-list-item('ЗАДАЧИ','#')
+    +footer-menu-list-item('С ЧЕГО НАЧИНАЕМ?','#')
+    +footer-menu-list-item('РЕЗУЛЬТАТ','#')
+    +footer-menu-list-item('УНИКАЛЬНОСТЬ','#')
+    +footer-menu-list-item('О НАС','#')
+    +footer-menu-list-item('КОНТАКТЫ','#')

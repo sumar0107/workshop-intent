@@ -11,10 +11,11 @@ html(class="no-js" lang="ru")
     -var bodyClasses
 
   body(class=bodyClasses)
-    .wrapper
+    .wrapperr#wrapper
       include ../../includes/header/_header
       main.wrapper__content
         block content
+    include ../../blocks/header/mobile-menu/_mobile-menu
     include ../../includes/footer/_footer
 
 
