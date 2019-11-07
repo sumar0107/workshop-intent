@@ -69,7 +69,7 @@
   }
 
   &__title {
-    color: #59a159;
+    color: $fruit-salad;
     font-size: rem-calc(24);
     line-height: rem-calc(36);
     font-weight: 500;
@@ -79,7 +79,7 @@
     }
 
     &-text {
-      color: #474749;
+      color: $abbey;
       font-size: rem-calc(20);
       font-weight: 500;
       line-height: rem-calc(28);
@@ -91,7 +91,7 @@
   }
 
   &__date {
-    color: #1e1e20;
+    color: $shark;
     font-size: rem-calc(14);
     line-height: rem-calc(20);
     font-weight: 500;
@@ -108,7 +108,7 @@
   }
 
   &__price {
-    color: #451a68;
+    color: $honey-flower;
     font-size: rem-calc(14);
     line-height: rem-calc(20);
     font-weight: 500;
@@ -147,7 +147,7 @@
   }
 
   &_3 {
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   &_4 {
@@ -168,7 +168,7 @@
   margin-bottom: rem-calc(8);
 
   &__title {
-    color: #451a68;
+    color: $honey-flower;
     font-size: rem-calc(24);
     line-height: rem-calc(32);
     font-weight: 500;
@@ -180,7 +180,7 @@
     }
 
     &-2 {
-      color: #451a68;
+      color: $honey-flower;
       font-size: rem-calc(12);
       line-height: rem-calc(16);
       font-weight: 500;
@@ -194,7 +194,7 @@
   }
 
   &__text {
-    color: #1e1e20;
+    color: $shark;
     font-size: rem-calc(12);
     line-height: rem-calc(18);
     font-weight: 500;
@@ -212,7 +212,7 @@
   display: flex;
   align-items: center;
   align-content: stretch;
-  color: #ffffff;
+  color: $white;
   font-size: rem-calc(16);
   line-height: rem-calc(20);
   font-weight: 500;

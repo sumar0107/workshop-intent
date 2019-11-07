@@ -39,7 +39,7 @@
 // The dropdown menu
 .dropdown-menu {
   padding: rem-calc(5);
-  @include border($mine-shaft);
+  @include border($black);
   box-shadow: 0 10px 30px rgba(32, 32, 32, 0.4);
   margin: $dropdown-spacer-sm 0 0;
   @include media-breakpoint-up(md) {
@@ -111,7 +111,7 @@
 
   @include hover {
     &:before {
-      border-top-color: $fuchsia;
+      border-top-color: $london-hue;
     }
   }
 
@@ -148,7 +148,7 @@
 
     @include hover {
       &:before {
-        border-bottom-color: $fuchsia;
+        border-bottom-color: $london-hue;
       }
     }
 
@@ -181,7 +181,7 @@
 
     @include hover {
       &:before {
-        border-bottom-color: $fuchsia;
+        border-bottom-color: $london-hue;
       }
     }
 
@@ -219,7 +219,7 @@
 
     @include hover {
       &:before {
-        border-top-color: $fuchsia;
+        border-top-color: $london-hue;
       }
     }
 

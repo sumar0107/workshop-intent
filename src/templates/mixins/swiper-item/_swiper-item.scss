@@ -5,7 +5,7 @@
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
-    background-color: $mine-shaft;
+    background-color: $black;
 
     iframe {
       position: absolute;
@@ -42,7 +42,7 @@
   }
 
   &__caption {
-    color: $mine-shaft;
+    color: $black;
     font-size: rem-calc(11);
     line-height: rem-calc(20);
     padding: rem-calc(10 0);

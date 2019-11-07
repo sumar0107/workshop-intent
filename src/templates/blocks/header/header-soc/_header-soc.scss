@@ -18,8 +18,8 @@
       align-content: center;
       align-items: center;
       justify-content: center;
-      color: #666666;
-      border: 1px solid #666666;
+      color: $dove-gray;
+      border: 1px solid $dove-gray;
       background-color: white;
       border-radius: 5px;
       width: rem-calc(34);
@@ -30,7 +30,7 @@
       }
 
       .icon {
-        fill: #666666;
+        fill: $dove-gray;
         width: rem-calc(24);
         height: rem-calc(24);
       }

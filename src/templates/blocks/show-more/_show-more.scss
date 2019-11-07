@@ -6,9 +6,14 @@
   padding: 0;
   margin: 0;
   background: transparent;
-  color: #59a159;
-  fill: #59a159;
+  color: $fruit-salad;
+  fill: $fruit-salad;
   outline: none !important;
+
+  &_purple {
+    color: $honey-flower;
+    fill: $honey-flower;
+  }
 
   span {
     order: 1;
@@ -21,5 +26,11 @@
     width: rem-calc(22);
     height: rem-calc(22);
   }
+
+
+  @include hover{
+    opacity: .7;
+  }
+
 }
 

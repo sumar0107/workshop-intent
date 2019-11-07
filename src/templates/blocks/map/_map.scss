@@ -13,8 +13,8 @@
     width: rem-calc(390);
     padding: rem-calc(20);
     border-radius: 15px;
-    border: 1px solid #666666;
-    background: #ffffff;
+    border: 1px solid $dove-gray;
+    background: $white;
 
     &-wrapper{
       position: absolute;

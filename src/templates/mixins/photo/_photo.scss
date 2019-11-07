@@ -1,0 +1,25 @@
+.photo {
+  @include make-row(10px);
+  margin-bottom: rem-calc(40);
+
+  &-item {
+    @include make-col-ready();
+    @include make-col(12);
+    padding: 5px;
+    @include media-breakpoint-up(xssm) {
+      @include make-col(4);
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+
+    &__img {
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+
+}

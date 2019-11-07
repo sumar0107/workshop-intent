@@ -10,7 +10,7 @@
     }
 
     &-link {
-      color: #080609;
+      color: $cinder;
       font-size: rem-calc(14);
       line-height: rem-calc(24);
       font-weight: 400;
@@ -31,7 +31,7 @@
     list-style: none;
 
     &-link {
-      color: #ffffff;
+      color: $white;
       font-size: rem-calc(14);
       line-height: rem-calc(24);
     }

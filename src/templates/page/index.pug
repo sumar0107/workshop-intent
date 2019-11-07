@@ -14,14 +14,25 @@ append preload
 
 block content
 
+
   include ../includes/section-top/_section-top
   include ../includes/section-quotes/_section-quotes
-  include ../blocks/separator/_separator-1
-  include ../includes/section-programs/_section-programs
-  include ../blocks/separator/_separator-2
-  include ../includes/section-why-us/_section-why-us
-  include ../includes/section-authors/_section-authors
-  include ../blocks/map/_map
+  .scrollnav-selector#tasks
+    include ../includes/section-text/_section-text-1
+    include ../includes/section-text/_section-text-2
+  .scrollnav-selector#result
+    include ../includes/section-text/_section-text-3
+    include ../blocks/separator/_separator-1
+  .scrollnav-selector#where-do-we-start
+    include ../includes/section-started/_section-started
+  .scrollnav-selector#programs
+    include ../includes/section-programs/_section-programs
+    include ../blocks/separator/_separator-2
+  .scrollnav-selector#uniqueness
+    include ../includes/section-why-us/_section-why-us
+  .scrollnav-selector#about
+    include ../includes/section-authors/_section-authors
+    include ../blocks/map/_map
 
   include ../includes/section-form/_section-form
 

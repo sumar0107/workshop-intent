@@ -1,9 +1,8 @@
 .title {
-  color: $mine-shaft;
+  color: $black;
   font-size: rem-calc(24);
   line-height: rem-calc(48);
   font-weight: normal;
-  text-transform: uppercase;
   @include media-breakpoint-up(md) {
     font-size: rem-calc(48);
     line-height: rem-calc(72);
@@ -11,6 +10,14 @@
 
   &_white {
     color: $white;
+  }
+
+  &_honey-flower {
+    color: $honey-flower;
+  }
+
+  &_green {
+    color: $fruit-salad;
   }
 
   &_left {
@@ -25,14 +32,17 @@
     text-align: right;
   }
 
+  &_uppercase {
+    text-transform: uppercase;
+  }
+
   &_small {
     font-size: rem-calc(24);
     line-height: rem-calc(36);
     margin-bottom: rem-calc(20);
     @include media-breakpoint-up(md) {
-      font-size: rem-calc(36);
-      line-height: rem-calc(48);
-      margin-bottom: rem-calc(24);
+      font-size: rem-calc(26);
+      line-height: rem-calc(26);
     }
   }
 
@@ -40,8 +50,8 @@
     font-size: rem-calc(18);
     line-height: rem-calc(20);
     @include media-breakpoint-up(md) {
-      font-size: rem-calc(60);
-      line-height: rem-calc(72);
+      font-size: rem-calc(35);
+      line-height: rem-calc(40);
     }
   }
 
@@ -49,29 +59,26 @@
     font-size: rem-calc(24);
     line-height: rem-calc(30);
     @include media-breakpoint-up(md) {
-      font-size: rem-calc(72);
-      line-height: rem-calc(72);
-      font-weight: 300;
-      margin-bottom: rem-calc(48);
+      font-size: rem-calc(52);
+      line-height: rem-calc(64);
+      font-weight: 400;
+      margin-bottom: rem-calc(40);
     }
   }
 
   &_bigger {
-    font-size: rem-calc(68);
-    line-height: rem-calc(68);
+    font-size: rem-calc(30);
+    line-height: rem-calc(34);
     font-weight: normal;
+    text-transform: uppercase;
     @include media-breakpoint-up(md) {
-      font-size: rem-calc(72);
-      line-height: rem-calc(72);
-    }
-    @include media-breakpoint-up(lg) {
-      font-size: rem-calc(96);
-      line-height: rem-calc(96);
-      margin-bottom: rem-calc(48);
+      font-size: rem-calc(60);
+      line-height: rem-calc(64);
+      margin-bottom: rem-calc(40);
     }
   }
 
-  &_front-slider{
+  &_front-slider {
     font-size: rem-calc(18);
     line-height: rem-calc(20);
     font-weight: normal;
@@ -83,7 +90,7 @@
   }
 
   &__lid {
-    color: #000000;
+    color: $black;
     font-size: rem-calc(16);
     line-height: rem-calc(24);
     font-weight: 400;

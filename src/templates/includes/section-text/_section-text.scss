@@ -1,0 +1,36 @@
+.section-text {
+  position: relative;
+  padding: rem-calc(40 0);
+  @include media-breakpoint-up(md) {
+    padding: rem-calc(80 0);
+  }
+
+  &_bg {
+    &-1 {
+      background-color: #d3d1da;
+    }
+
+    &-2 {
+      background-color: #b6b4c3;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    text-align: left;
+    color: $black;
+    font-size: rem-calc(12);
+    font-weight: 400;
+    line-height: rem-calc(24);
+    font-style: italic;
+    margin-bottom: 0;
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(20);
+      line-height: rem-calc(30);
+    }
+
+    footer {
+      text-align: right;
+    }
+  }
+}

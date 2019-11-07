@@ -1,0 +1,22 @@
+include ../../mixins/photo/_photo
+// START: section-text
+.section-text.section-text_bg-2
+  .container-full
+    .wrapper__row
+      .wrapper__col-center-10
+        h3.title.title_honey-flower.title_big.text-center Эта программа создана для того, чтобы вы смогли:
+        .wysiwyg.fw300
+          ul.arrow
+            li отличать свои истинные желания от ложных представлений о них.
+            li чаще делать и выбирать то, что действительно нужно вам, а не кому-то другому.
+            li легче проходить то, что принято называть уроками жизни.
+            li реализовывать самый счастливый сценарий вашей судьбы.
+            li предупреждать ошибки, которые могут стать причиной трудностей.
+            li получать то, что желаете всей душой и иметь возможность помогать тем, кто вам дорог.
+        +photo
+          +photo-item('./assets/img/photo-4.png')
+          +photo-item('./assets/img/photo-5.png')
+          +photo-item('./assets/img/photo-6.png')
+        .text-center
+          a(href='#').btn.btn-green.btn-lg ЗАПИСАТЬСЯ НА ПРОГРАММУ
+// END: section-text

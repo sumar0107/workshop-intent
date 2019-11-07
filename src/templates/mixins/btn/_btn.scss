@@ -1,6 +1,5 @@
 .btn {
   text-transform: uppercase;
-  font-style: italic;
   border-width: $btn-border-width-sm;
   cursor: pointer;
   @include transition(color .15s, background-color .15s, border-color .15s);
@@ -28,17 +27,17 @@
 
   &-outline {
     &-green {
-      @include button-outline-variant($limeade, $color-hover: $fuchsia, $active-background: rgba($fuchsia, 0), $active-border: $purple-pizzazz);
+      @include button-outline-variant($fruit-salad, $color-hover: $london-hue, $active-background: rgba($london-hue, 0), $active-border: $honey-flower);
 
       .icon {
-        fill: $limeade;
+        fill: $fruit-salad;
       }
 
       @include hover {
         background-color: transparent;
-        border-color: $fuchsia;
+        border-color: $london-hue;
         .icon {
-          fill: $fuchsia;
+          fill: $london-hue;
         }
 
       }
@@ -46,19 +45,19 @@
       &:not(:disabled):not(.disabled):active,
       &:not(:disabled):not(.disabled).active,
       .show > &.dropdown-toggle {
-        color: $purple-pizzazz;
+        color: $honey-flower;
         background-color: transparent;
-        border-color: $purple-pizzazz;
+        border-color: $honey-flower;
 
         .icon {
-          fill: $purple-pizzazz;
+          fill: $honey-flower;
         }
       }
     }
 
     &-black {
-      @include button-outline-variant($mine-shaft, $color-hover: $mine-shaft, $active-background: rgba($limeade, 0), $active-border: $mine-shaft);
-      color: $limeade;
+      @include button-outline-variant($black, $color-hover: $black, $active-background: rgba($fruit-salad, 0), $active-border: $black);
+      color: $fruit-salad;
       font-size: rem-calc(14);
       line-height: rem-calc(20);
       font-weight: 500;
@@ -82,14 +81,14 @@
       }
 
       .icon {
-        fill: $limeade;
+        fill: $fruit-salad;
       }
 
       @include hover {
-        background-color: $limeade;
-        border-color: $mine-shaft;
+        background-color: $fruit-salad;
+        border-color: $black;
         .icon {
-          fill: $limeade;
+          fill: $fruit-salad;
         }
 
       }
@@ -97,18 +96,18 @@
       &:not(:disabled):not(.disabled):active,
       &:not(:disabled):not(.disabled).active,
       .show > &.dropdown-toggle {
-        color: $mine-shaft;
-        background-color: $limeade;
-        border-color: $mine-shaft;
+        color: $black;
+        background-color: $fruit-salad;
+        border-color: $black;
 
         .icon {
-          fill: $mine-shaft;
+          fill: $black;
         }
       }
     }
 
     &-primary {
-      //@include button-outline-variant($limeade, $white, $limeade, $limeade);
+      //@include button-outline-variant($fruit-salad, $white, $fruit-salad, $fruit-salad);
 
       @include media-breakpoint-down(sm) {
         font-size: rem-calc(18);
@@ -127,37 +126,63 @@
   }
 
   &-green {
-    @include button-variant($limeade, $limeade, $hover-background: $fuchsia, $hover-border: $fuchsia, $active-background: $purple-pizzazz, $active-border: $purple-pizzazz);
-    color: $mine-shaft;
+    @include button-variant($fruit-salad, $fruit-salad, $hover-background: $honey-flower, $hover-border: $honey-flower, $active-background: $honey-flower, $active-border: $honey-flower);
+    color: $white;
 
     .icon {
-      fill: $mine-shaft;
+      fill: $white;
     }
 
     @include hover {
-      color: $yellow;
+      color: $white;
       .icon {
-        fill: $yellow;
+        fill: $white;
       }
     }
 
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
     .show > &.dropdown-toggle {
-      color: rgba($yellow, .8);
+      color: rgba($white, .8);
 
       .icon {
-        fill: rgba($yellow, .8);
+        fill: rgba($white, .8);
+      }
+    }
+  }
+
+  &-white {
+    @include button-variant($white, $fruit-salad, $hover-background: $fruit-salad, $hover-border: $fruit-salad, $active-background: $honey-flower, $active-border: $honey-flower);
+    color: $fruit-salad;
+
+    .icon {
+      fill: $fruit-salad;
+    }
+
+    @include hover {
+      color: $white;
+      .icon {
+        fill: $white;
+      }
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
+      color: rgba($white, .8);
+
+      .icon {
+        fill: rgba($white, .8);
       }
     }
   }
 
   &-search {
-    @include button-variant($limeade, $mine-shaft, $hover-background: $fuchsia, $hover-border: $mine-shaft, $active-background: $purple-pizzazz, $active-border: $mine-shaft);
-    color: $mine-shaft;
+    @include button-variant($fruit-salad, $black, $hover-background: $london-hue, $hover-border: $black, $active-background: $honey-flower, $active-border: $black);
+    color: $black;
 
     .icon {
-      fill: $mine-shaft;
+      fill: $black;
     }
 
     @include hover {
@@ -182,53 +207,53 @@
     padding-left: 0;
     padding-right: 0;
     border: none;
-    color: $limeade;
+    color: $fruit-salad;
     @include transition(color .15s);
 
     .icon {
-      fill: $limeade;
+      fill: $fruit-salad;
       @include transition(fill .15s);
     }
 
     @include hover {
-      color: $fuchsia;
+      color: $london-hue;
       .icon {
-        fill: $fuchsia;
+        fill: $london-hue;
       }
     }
 
     @include active {
-      color: $purple-pizzazz;
+      color: $honey-flower;
       .icon {
-        fill: $purple-pizzazz;
+        fill: $honey-flower;
       }
     }
 
     &.btn-collapse {
-      color: $purple-pizzazz;
+      color: $honey-flower;
 
       .icon {
-        fill: $purple-pizzazz;
+        fill: $honey-flower;
       }
 
       &.collapsed {
-        color: $limeade;
+        color: $fruit-salad;
 
         .icon {
-          fill: $limeade;
+          fill: $fruit-salad;
         }
 
         @include hover {
-          color: $fuchsia;
+          color: $london-hue;
           .icon {
-            fill: $fuchsia;
+            fill: $london-hue;
           }
         }
 
         @include active {
-          color: $purple-pizzazz;
+          color: $honey-flower;
           .icon {
-            fill: $purple-pizzazz;
+            fill: $honey-flower;
           }
         }
       }
@@ -236,14 +261,17 @@
   }
 
   &-lg {
+    font-weight: 300;
     @include media-breakpoint-up(md) {
-      padding-left: rem-calc(30);
-      padding-right: rem-calc(30);
+      padding-left: rem-calc(10);
+      padding-right: rem-calc(10);
     }
   }
 
   &-sm {
-    font-size: rem-calc(18);
+    font-size: rem-calc(28);
+    font-weight: 500;
+    text-transform: none;
   }
 
   &-icon {
@@ -324,7 +352,7 @@
 
           @include media-breakpoint-up(md) {
             width: rem-calc(56);
-            height: rem-calc(30 );
+            height: rem-calc(30);
           }
         }
       }
@@ -365,44 +393,44 @@
   }
 
   &-radio {
-    @include button-outline-variant($limeade, $color-hover: $fuchsia, $active-background: $mine-shaft, $active-border: $mine-shaft);
-    border-color: $mine-shaft;
+    @include button-outline-variant($fruit-salad, $color-hover: $london-hue, $active-background: $black, $active-border: $black);
+    border-color: $black;
     background-color: $white;
     padding-left: rem-calc(10);
     padding-right: rem-calc(10);
     cursor: pointer;
 
     .icon {
-      fill: $limeade;
+      fill: $fruit-salad;
     }
 
     @include hover {
       background-color: $white;
-      border-color: $mine-shaft;
+      border-color: $black;
       .icon {
-        fill: $fuchsia;
+        fill: $london-hue;
       }
 
     }
 
     &:not(:disabled):not(.disabled):active,
     .show > &.dropdown-toggle {
-      color: $purple-pizzazz;
+      color: $honey-flower;
       background-color: $white;
-      border-color: $mine-shaft;
+      border-color: $black;
 
       .icon {
-        fill: $purple-pizzazz;
+        fill: $honey-flower;
       }
     }
 
     &:not(:disabled):not(.disabled).active {
       color: $white;
-      background-color: $mine-shaft;
-      border-color: $mine-shaft;
+      background-color: $black;
+      border-color: $black;
 
       .icon {
-        fill: $mine-shaft;
+        fill: $black;
       }
     }
 

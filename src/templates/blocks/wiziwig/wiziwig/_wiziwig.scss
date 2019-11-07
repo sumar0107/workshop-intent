@@ -1,16 +1,21 @@
-.wiziwig {
+.wysiwyg {
   @include clearfix();
-  color: $mine-shaft;
+  color: $black;
   font-size: rem-calc(14);
   line-height: rem-calc(20);
   font-weight: normal;
 
+  &.fw300 {
+    font-weight: 300;
+  }
+
   @include media-breakpoint-up(md) {
-    font-size: rem-calc(18);
-    line-height: rem-calc(24);
+    font-size: rem-calc(22);
+    line-height: rem-calc(32);
   }
 
   h1, h2, h3, h4, h5, h6 {
+    color: $honey-flower;
 
     small {
       display: block;
@@ -56,7 +61,6 @@
       font-size: rem-calc(36);
       line-height: rem-calc(48);
       font-weight: normal;
-      margin-bottom: rem-calc(24);
     }
   }
 
@@ -67,16 +71,12 @@
     text-transform: uppercase;
     margin-bottom: rem-calc(20);
     @include media-breakpoint-up(md) {
-      font-size: rem-calc(24);
-      line-height: rem-calc(24);
-      margin-bottom: rem-calc(24);
+      font-size: rem-calc(26);
+      line-height: rem-calc(32);
     }
 
     &:not(:first-child) {
-      margin-top: rem-calc(40);
-      @include media-breakpoint-up(md) {
-        margin-top: rem-calc(48);
-      }
+      margin-top: rem-calc(20);
     }
   }
 
@@ -87,9 +87,8 @@
     //text-transform: uppercase;
     margin-bottom: rem-calc(20);
     @include media-breakpoint-up(md) {
-      font-size: rem-calc(18);
-      line-height: rem-calc(24);
-      margin-bottom: rem-calc(24);
+      font-size: rem-calc(22);
+      line-height: rem-calc(32);
     }
 
     &:not(:first-child) {
@@ -137,7 +136,7 @@
     padding: 0;
     list-style: none;
     @include media-breakpoint-up(md) {
-      margin: rem-calc(0 0 24);
+      margin: rem-calc(0 0 40);
     }
 
     > li {
@@ -146,27 +145,51 @@
       position: relative;
       @include media-breakpoint-up(md) {
         margin-bottom: rem-calc(24);
-        padding-left: rem-calc(40);
+        padding-left: rem-calc(30);
       }
 
       &:before {
         content: '';
         display: block;
-        width: rem-calc(5);
-        height: rem-calc(5);
+        width: rem-calc(12);
+        height: rem-calc(12);
         position: absolute;
-        left: rem-calc(10);
-        top: rem-calc(6);
-        transform: translateX(-50%);
         border-radius: 50%;
-        background-color: $mine-shaft;
+        left: rem-calc(0);
+        top: rem-calc(4);
+        background-color: $honey-flower;
         @include media-breakpoint-up(md) {
-          left: rem-calc(20);
+          top: rem-calc(7);
+          width: rem-calc(18);
+          height: rem-calc(18);
         }
       }
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+
+    &.arrow {
+      > li {
+        &:before {
+          content: '';
+          display: block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 6px 0 6px 12px;
+          border-color: transparent transparent transparent $honey-flower;
+          background-color: transparent;
+          position: absolute;
+          border-radius: 0;
+          left: rem-calc(0);
+          top: rem-calc(4);
+          @include media-breakpoint-up(md) {
+            border-width: 10px 0 10px 20px;
+            top: rem-calc(6);
+          }
+        }
       }
     }
   }
@@ -191,7 +214,7 @@
 
       &:before {
         counter-increment: list;
-        content: counter(list) ".";
+        content: counter(list) ")";
         display: block;
         width: rem-calc(24);
         position: absolute;
@@ -212,14 +235,14 @@
   }
 
   .table {
-    @include border-bottom($mine-shaft);
+    @include border-bottom($black);
     margin-bottom: rem-calc(20);
     @include media-breakpoint-up(md) {
       margin-bottom: rem-calc(48);
     }
 
     thead {
-      @include border($mine-shaft);
+      @include border($black);
 
       th, td {
         border: none;
@@ -240,7 +263,7 @@
     }
 
     tfoot {
-      @include border-top($mine-shaft);
+      @include border-top($black);
 
       th, td {
         border: none;
@@ -254,7 +277,7 @@
   }
 
   blockquote {
-    color: $mine-shaft;
+    color: $black;
     font-size: rem-calc(24);
     line-height: rem-calc(30);
     font-weight: normal;
@@ -273,7 +296,7 @@
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
-    background-color: $mine-shaft;
+    background-color: $black;
     margin-bottom: rem-calc(24);
 
     iframe {
@@ -283,6 +306,23 @@
       width: 100%;
       height: 100%;
       border: none;
+    }
+  }
+
+  .frame {
+    border: 1px solid white;
+    padding: rem-calc(40);
+    background-color: #bbb9d3;
+    margin-bottom: rem-calc(40);
+  }
+
+  .fl {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    img {
+      margin-right: rem-calc(10);
     }
   }
 }

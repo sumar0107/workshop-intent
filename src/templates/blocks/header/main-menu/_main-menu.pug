@@ -1,14 +1,14 @@
 mixin main-menu-li(link,text,classs)
   li(class='main-menu__list-item '+classs)
-    a(href=link class='main-menu__list-link')&attributes(attributes)
+    a(href=link class='main-menu__list-link js-menu-link')&attributes(attributes)
       span=text
     block
 
 nav.main-menu
   ul.main-menu__list
-    +main-menu-li('#', 'Задачи','')(class='')
-    +main-menu-li('#', 'С чего начинаем','')(class='')
-    +main-menu-li('#', 'Типы программ','')(class='')
-    +main-menu-li('#', 'Результат','')(class='')
-    +main-menu-li('#', 'Уникальность','')(class='')
-    +main-menu-li('#', 'О нас','')(class='')
+    +main-menu-li('#tasks', 'Задачи','')(class='')
+    +main-menu-li('#where-do-we-start', 'С чего начинаем','')(class='')
+    +main-menu-li('#programs', 'Типы программ','')(class='')
+    +main-menu-li('#result', 'Результат','')(class='')
+    +main-menu-li('#uniqueness', 'Уникальность','')(class='')
+    +main-menu-li('#about', 'О нас','')(class='')

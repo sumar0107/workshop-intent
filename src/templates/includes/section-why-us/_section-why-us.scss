@@ -7,7 +7,7 @@
 
   &__item {
     background-color: #d3d1da;
-    color: #1e1e20;
+    color: $shark;
     font-size: rem-calc(14);
     line-height: rem-calc(24);
     font-weight: 400;
@@ -26,8 +26,8 @@
     }
 
     &_noteven {
-      background-color: #ffffff;
-      color: #451a68;
+      background-color: $white;
+      color: $honey-flower;
     }
   }
 }

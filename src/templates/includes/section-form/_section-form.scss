@@ -13,7 +13,7 @@
   }
 
   &__lid {
-    color: #ffffff;
+    color: $white;
     font-size: rem-calc(20);
     font-weight: 400;
     line-height: rem-calc(24);
@@ -46,7 +46,7 @@
   }
 
   &__text {
-    color: #555555;
+    color: $emperor;
     font-size: rem-calc(16);
     line-height: rem-calc(20);
     font-weight: 300;
@@ -54,7 +54,7 @@
     margin-bottom: rem-calc(20);
 
     &_bottom {
-      color: #858585;
+      color: $gray;
     }
   }
 }

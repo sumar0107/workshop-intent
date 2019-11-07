@@ -1,20 +1,29 @@
-$black:               #000000;
+
 $cod-gray:            #101010;
 $mine-shaft:          #202020;
 $thunder:             #231f20;
-$dove-gray:           #666666;
 $dusty-gray:          #979797;
 $alto:                #d8d8d8;
 $concrete:            #f2f2f2;
-$white:               #ffffff;
 $yellow:              #fcff00;
 $chartreuse-yellow:   #e8ff00;
-$limeade:             #678f00;
+$limeade:             #00a253;
 $limeade-20:          #e1eacb;
 $carnation:           #f75e48;
 $red:                 #ff0000;
-$fuchsia:             #ff00ff;
+$london-hue:          #bea7cb;
 $purple-pizzazz:      #d000d0;
+
+$white:               #ffffff;
+$emperor:             #555555;
+$dove-gray:           #666666;
+$black:               #000000;
+$shark:               #1e1e20;
+$abbey:               #474749;
+$honey-flower:        #451a68;
+$gray:                #858585;
+$cinder:              #080609;
+$fruit-salad:         #59a159;
 
 $footer-height: 304;
 $footer-height-sm: 414;
@@ -25,7 +34,7 @@ $gray-900: #19324d;
 $font-size-base:              1rem;
 
 $body-bg:             $white;
-$body-color:          $mine-shaft;
+$body-color:          $black;
 
 $ubuntu: 'Ubuntu', sans-serif;
 
@@ -36,7 +45,7 @@ $ubuntu: 'Ubuntu', sans-serif;
 
 $link-color:                              $limeade;
 $link-decoration:                         none;
-$link-hover-color:                        $fuchsia;
+$link-hover-color:                        $london-hue;
 $link-hover-decoration:                   none;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% !default;
@@ -88,7 +97,7 @@ $border-radius-sm:            0;
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
-$input-btn-font-size:     1rem;
+$input-btn-font-size:     1.375rem;
 $input-btn-font-family:   $ubuntu;
 $input-btn-padding-x:     1.75rem;
 $input-btn-padding-y:     0.4375rem;
@@ -98,9 +107,9 @@ $input-btn-focus-width:       .0rem ;
 //
 // For each of Bootstrap's buttons, define text, background, and border color.
 $btn-padding-y:               0.9375rem ;
-$btn-padding-x:               2.25rem;
+$btn-padding-x:               1rem;
 $btn-font-size:               $input-btn-font-size;
-$btn-font-size:               1.5rem;
+$btn-font-size:               1.375rem;
 $btn-line-height:             1.5rem;
 
 $btn-padding-y-sm:            0.5625rem;
@@ -108,9 +117,9 @@ $btn-padding-x-sm:            1.5625rem;
 $btn-font-size-sm:            1.5rem;
 $btn-line-height-sm:          1.5rem;
 
-$btn-padding-y-lg:            0.5625rem;
+$btn-padding-y-lg:            1.875rem;
 $btn-padding-x-lg:            1.875rem;
-$btn-font-size-lg:            1.5rem;
+$btn-font-size-lg:            2.75rem;
 $btn-line-height-lg:          3rem;
 
 $btn-border-width:            3px;
@@ -158,12 +167,12 @@ $input-border-radius-lg:                $border-radius-lg;
 $input-border-radius-sm:                $border-radius-sm;
 
 $input-focus-bg:                        $input-bg;
-$input-focus-border-color:              $fuchsia;
+$input-focus-border-color:              $london-hue;
 //$input-focus-color:                     $input-color !default;
 //$input-focus-width:                     $input-btn-focus-width !default;
 //$input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
-$input-placeholder-color:               #84a6cc;
+$input-placeholder-color:               $gray;
 $input-plaintext-color:                 $body-color;
 
 $input-height-border:                   $input-border-width * 2 ;

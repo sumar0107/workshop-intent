@@ -1,12 +1,12 @@
 // Radio Buttons
 $secondary-color: $limeade;
 $radio-fill-color: $secondary-color;
-$radio-empty-color: $mine-shaft;
+$radio-empty-color: $black;
 $radio-border-width: 3px;
 $radio-border-width-sm: 2px;
 $input-background: $white;
-$input-disabled-color: rgba($mine-shaft, .5);
-$input-disabled-solid-color: rgba($mine-shaft, .5);
+$input-disabled-color: rgba($black, .5);
+$input-disabled-solid-color: rgba($black, .5);
 /* Checkboxes
    ========================================================================== */
 .checkbox {

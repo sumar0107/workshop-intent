@@ -1,0 +1,94 @@
+.section-started {
+  position: relative;
+  padding: rem-calc(40 0);
+  background-color: #d3d1da;
+  @include media-breakpoint-up(md) {
+    padding: rem-calc(80 0);
+  }
+
+  &__ul {
+    margin-bottom: rem-calc(40);
+    @include media-breakpoint-up(lg){
+      background: url(../img/started.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+
+    &-li {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+      margin-bottom: rem-calc(20);
+      @include media-breakpoint-up(sm){
+        flex-direction: row;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+      }
+      &:nth-child(2n) {
+        @include media-breakpoint-up(lg) {
+          padding-left: rem-calc(230);
+        }
+      }
+    }
+
+    &-img {
+      padding: rem-calc(10);
+      background-color: $white;
+      border-radius: 50%;
+      margin-right: rem-calc(20);
+      margin-bottom: rem-calc(20);
+      @include media-breakpoint-up(sm){
+        margin-bottom: 0;
+      }
+      @include media-breakpoint-up(md){
+        padding: rem-calc(30);
+      }
+      @include media-breakpoint-up(lg) {
+        opacity: 0;
+      }
+
+      &-inner {
+        padding: rem-calc(5 20);
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        width: rem-calc(120);
+        height: rem-calc(120);
+        border-radius: 50%;
+        @include media-breakpoint-up(md){
+          padding: rem-calc(5);
+          width: rem-calc(180);
+          height: rem-calc(180);
+        }
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+
+    &-body {
+      max-width: rem-calc(620);
+      text-align: center;
+      @include media-breakpoint-up(sm){
+        text-align: left;
+      }
+    }
+  }
+}
+.link-border{
+  display: block;
+  @include border-top($fruit-salad);
+  @include border-bottom($fruit-salad);
+  color: $fruit-salad;
+  font-size: rem-calc(30);
+  font-weight: 500;
+  line-height: rem-calc(42);
+  max-width: rem-calc(820);
+  margin: 0 auto 20px;
+
+}

@@ -19,12 +19,16 @@
       align-items: center;
       height: rem-calc(60);
       padding: rem-calc(6 10);
-      color: #ffffff;
+      color: $white;
       font-size: rem-calc(16);
       font-weight: 500;
       line-height: rem-calc(18);
       @include media-breakpoint-up(md){
         font-size: rem-calc(18);
+      }
+
+      &.active{
+        color: $london-hue;
       }
     }
   }

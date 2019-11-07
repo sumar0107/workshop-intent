@@ -1,13 +1,13 @@
 mixin mobile-menu-li(link,text,icon)
   li(class='mobile-menu__list-item')
-    a(href=link class='mobile-menu__list-link')&attributes(attributes)
+    a(href=link class='mobile-menu__list-link js-menu-link')&attributes(attributes)
       span.mobile-menu__list-text=text
 .mobile-menu#menu
   nav.mobile-menu
     ul.mobile-menu__list
-      +mobile-menu-li('#', 'Задачи','')(class='')
-      +mobile-menu-li('#', 'С чего начинаем','')(class='')
-      +mobile-menu-li('#', 'Типы программ','')(class='')
-      +mobile-menu-li('#', 'Результат','')(class='')
-      +mobile-menu-li('#', 'Уникальность','')(class='')
-      +mobile-menu-li('#', 'О нас','')(class='')
+      +mobile-menu-li('#tasks', 'Задачи','')(class='')
+      +mobile-menu-li('#where-do-we-start', 'С чего начинаем','')(class='')
+      +mobile-menu-li('#programs', 'Типы программ','')(class='')
+      +mobile-menu-li('#result', 'Результат','')(class='')
+      +mobile-menu-li('#uniqueness', 'Уникальность','')(class='')
+      +mobile-menu-li('#about', 'О нас','')(class='')
