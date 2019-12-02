@@ -83,6 +83,18 @@
   &__menu {
     background-color: #4e136a;
 
+    &-row{
+      @include make-row();
+    }
+    &-col{
+      @include make-col-ready();
+
+      @include media-breakpoint-up(md){
+        @include make-col-offset(1);
+        @include make-col(10);
+      }
+    }
+
     .main-menu {
       display: none;
       @include media-breakpoint-up(sm) {

@@ -1,12 +1,11 @@
 const showMore = () => {
-  let showMoreBtn = document.querySelectorAll('.js-show-more');
-
-  for (let i = 0; i < showMoreBtn.length; i++) {
-    showMoreBtn[i].addEventListener('click', (e) => {
+  let showMoreBtn = [...document.querySelectorAll('.js-show-more')];
+  showMoreBtn.forEach(item => {
+    item.addEventListener('click', (e) => {
       e.preventDefault();
-      let showMoreBtnText = showMoreBtn[i].querySelector('span');
-      let showMoreBtnIcon = showMoreBtn[i].querySelector('.icon');
-      let showMoreWrapper = showMoreBtn[i].closest('.js-show-more-wrapper');
+      let showMoreBtnText = item.querySelector('span');
+      let showMoreBtnIcon = item.querySelector('.icon');
+      let showMoreWrapper = item.closest('.js-show-more-wrapper');
       let showMoreText = showMoreWrapper.querySelector('.js-show-more-text');
 
       if (showMoreText.style.display !== 'none') {
@@ -20,6 +19,6 @@ const showMore = () => {
         showMoreBtnIcon.style.display = 'none';
       }
     })
-  }
+  })
 };
 export default showMore

@@ -1,6 +1,9 @@
 // sass-lint:disable no-vendor-prefixes no-color-literals
 html {
   font-size: 16px;
+  @include media-breakpoint-up(md){
+    font-size: 12px;
+  }
 }
 
 body {

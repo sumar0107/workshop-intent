@@ -2,14 +2,15 @@ const yaMapInit = () => {
   const {ymaps} = global;
   ymaps.ready(() => {
     const myMap = new ymaps.Map('map', {
-      center: [59.935980, 30.373429],
-      zoom: 15
+      center: [59.918009, 30.304338],
+      zoom: 17
+
     }, {
       searchControlProvider: 'yandex#search'
     });
 
 
-    const myPlacemarkWithContent = new ymaps.Placemark([59.935980, 30.373429], {
+    const myPlacemarkWithContent = new ymaps.Placemark([59.918009, 30.304338], {
       hintContent: 'Мастерская Намерения',
     }, {
       // Опции.

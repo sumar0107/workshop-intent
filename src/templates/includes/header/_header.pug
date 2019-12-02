@@ -14,8 +14,10 @@ header(class="header")
             span 8 (812) 575 45 96
   .header__menu
     .container-full
-      include ../../blocks/header/main-menu/_main-menu
-      .header__hamburger
-        +hamburger
+      .header__menu-row
+        .header__menu-col
+          include ../../blocks/header/main-menu/_main-menu
+          .header__hamburger
+            +hamburger
 
 // END: header

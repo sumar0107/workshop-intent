@@ -9,7 +9,8 @@
   &__ul {
     margin-bottom: rem-calc(40);
     @include media-breakpoint-up(lg){
-      background: url(../img/started.png);
+      background-image: url(../img/started.png);
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: left center;
     }
