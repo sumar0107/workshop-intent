@@ -1,13 +1,13 @@
 mixin footer-menu-list-item(text,src)
   li.footer-menu__list-item
-    a(href=src).footer-menu__list-link&attributes(attributes)
+    a(href=src).footer-menu__list-link.js-menu-link&attributes(attributes)
       span=text
       block
 .footer-menu
   ul.footer-menu__list
-    +footer-menu-list-item('ЗАДАЧИ','#')
-    +footer-menu-list-item('С ЧЕГО НАЧИНАЕМ?','#')
-    +footer-menu-list-item('РЕЗУЛЬТАТ','#')
-    +footer-menu-list-item('УНИКАЛЬНОСТЬ','#')
-    +footer-menu-list-item('О НАС','#')
-    +footer-menu-list-item('КОНТАКТЫ','#')
+    +footer-menu-list-item('ЗАДАЧИ','#tasks')
+    +footer-menu-list-item('С ЧЕГО НАЧИНАЕМ?','#where-do-we-start')
+    +footer-menu-list-item('РЕЗУЛЬТАТ','#result')
+    +footer-menu-list-item('УНИКАЛЬНОСТЬ','#uniqueness')
+    +footer-menu-list-item('О НАС','#about')
+    +footer-menu-list-item('КОНТАКТЫ','#map')

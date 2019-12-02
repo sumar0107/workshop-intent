@@ -7,17 +7,39 @@
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
-  @include media-breakpoint-up(sm){
-    background-attachment: fixed;height: 100vh;
+  @include media-breakpoint-up(sm) {
+    background-attachment: fixed;
+    height: 100vh;
     padding: rem-calc(40 0);
   }
 
   &_1 {
     background-image: url(../img/separator-1.png);
+    background-attachment: initial;
+    height: 0;
+    padding-top: 43%;
+    @include media-breakpoint-up(sm) {
+      background-attachment: initial;
+      height: 0;
+      padding-top: 43%;
+    }
+    @include media-breakpoint-up(md) {
+      background-attachment: initial;
+      height: 0;
+      padding-top: 50%;
+    }
   }
 
   &_2 {
     background-image: url(../img/separator-2.png);
+    @include media-breakpoint-down(sm){
+      height: auto;
+      padding-top: rem-calc(100);
+      padding-bottom: rem-calc(20);
+    }
+    @include media-breakpoint-down(xs){
+      padding-top: rem-calc(20);
+    }
   }
 
   &__text {
